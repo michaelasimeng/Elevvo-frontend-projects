@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Masi Solution | Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+ <div class="dashboard-container">
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <span class="logo-text">Masi Solution</span>
+            </div>
+            <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar" aria-expanded="true">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <p class="nav-heading">MAIN MENU</p>
+
+            <ul class="nav-list">
+                <li class="nav-item active">
+                    <a href="#dashboard" class="nav-link" title="Dashboard">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li class=" nav-item">
+                    <a href="#analytics" class="nav-link" title="Analytics">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+
+                <li class=" nav-item">
+                    <a href="#messages" class="nav-link" title="Messages">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Messages</span>
+                        <span class="notification">3</span>
+                    </a>
+                </li>
+
+                <li class=" nav-item">
+                    <a href="#settings" class="nav-link" title="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-profile">
+                <div class="user-avatar">MA</div>
+            
+                <div class="user-info">
+                     <h4>Michael Ankomah Asimeng</h4>
+                     <p>Administrator</p>
+                </div>
+               <i class="fa-solid fa-ellipsis"></i>
+                </div>
+               
+        </div>
+    </aside>
+
+    <main class="main-content" id="dashboard">
+        <header class="topbar">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open sidebar" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div>
+            <p class="welcome-text">Welcome back, Michael</p>
+            <h1>Dashboard Overview</h1>
+            </div>
+
+            <div class="topbar-actions">
+                <button class="icon-btn" aria-label="Notifications">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="topbar-avatar">MA</div>
+            </div>
+        </header>
+        <section class="welcome-banner">
+            <div>
+                <span class="banner-label">YOUR WORKSPACE</span>
+                <h2>Make today productive.</h2>
+                <p>Manage your projects, track your progress and stay organized </p>
+            </div>
+
+           <div class="banner-icon">
+            <i class="fa-solid fa-rocket"></i>
+           </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-folder-open"></i>
+                </div>
+                <p>Total Projects</p>
+                <h2>24</h2>
+                <span class="stat-growth">+12% this month</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon blue">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <p>Task Completed</p>
+                <h2>148</h2>
+                <span class="stat-growth">+8% this month</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <p>Pending Tasks</p>
+                <h2>12</h2>
+                <span class="stat-warning">Needs attention</span>
+            </div>
+        </section>
+
+        <section class="activity-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Recent Activity</h2>
+                    <p>Here is what is happening in your workspace.</p>
+                </div>
+                <a href="#activity">View all</a>
+            </div>
+
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="activity-icon purple">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>
+                        <h4>Project completed</h4>
+                        <p>Your website redesign project is complete.</p>
+                    </div>
+                    <span>2 hours ago</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon blue">
+                        <i class="fa-solid fa-folder-plus"></i>
+                    </div>
+                    <div>
+                        <h4>New project created</h4>
+                        <p>Your created a new mobile application project.</p>
+                    </div>
+                    <span>Yesterday</span>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon orange">
+                        <i class="fa-solid fa-comment"></i>
+                    </div>
+                    <div>
+                        <h4>New message received</h4>
+                        <p>You reeive a message from your client.</p>
+                    </div>
+                    <span>2 hours ago</span>
+                </div>
+            </div>
+
+<!-- ANALYTICS SECTION -->
+<section class="page-section" id="analytics">
+    <div class="page-heading">
+        <span>PERFORMANCE</span>
+        <h2>Analytics Overview</h2>
+        <p>Track your workspace performance and productivity.</p>
+    </div>
+
+    <div class="analytics-grid">
+        <div class="analytics-card">
+            <h3>Project Completion</h3>
+            <h2>78%</h2>
+            <div class="progress-track">
+                <div class="progress-fill" style="width:78%"></div>
+            </div>
+            <p>78% of projects completed</p>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Task Performance</h3>
+            <h2>92%</h2>
+            <div class="progress-track">
+                <div class="progress-fill blue-fill" style="width:92%"></div>
+            </div>
+            <p>Excellent productivity this month</p>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Pending Work</h3>
+            <h2>35%</h2>
+            <div class="progress-track">
+                <div class="progress-fill orange-fill" style="width:35%"></div>
+            </div>
+            <p>Tasks remaining</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section class="page-section" id="projects">
+    <div class="page-heading">
+        <span>WORKSPACE</span>
+        <h2>My Projects</h2>
+        <p>Manage and monitor your ongoing projects.</p>
+    </div>
+
+    <div class="content-card">
+        <div class="project-row project-header">
+            <span>PROJECT NAME</span>
+            <span>STATUS</span>
+            <span>PROGRESS</span>
+        </div>
+
+        <div class="project-row">
+            <strong>Website Redesign</strong>
+            <span class="status completed">Completed</span>
+            <span>100%</span>
+        </div>
+
+        <div class="project-row">
+            <strong>Mobile Application</strong>
+            <span class="status ongoing">In Progress</span>
+            <span>65%</span>
+        </div>
+
+        <div class="project-row">
+            <strong>Cloud Infrastructure</strong>
+            <span class="status pending">Pending</span>
+            <span>20%</span>
+        </div>
+
+        <div class="project-row">
+            <strong>Portfolio Website</strong>
+            <span class="status ongoing">In Progress</span>
+            <span>45%</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- MESSAGES SECTION -->
+<section class="page-section" id="messages">
+    <div class="page-heading">
+        <span>COMMUNICATION</span>
+        <h2>Messages</h2>
+        <p>Stay connected with your clients and team.</p>
+    </div>
+
+    <div class="content-card messages-card">
+
+        <div class="message-item">
+            <div class="message-avatar">JD</div>
+            <div class="message-content">
+                <h4>John Doe</h4>
+                <p>Hello! I have reviewed the website design. Great work!</p>
+            </div>
+            <span>09:30 AM</span>
+        </div>
+
+        <div class="message-item">
+            <div class="message-avatar blue-avatar">SA</div>
+            <div class="message-content">
+                <h4>Sarah Adams</h4>
+                <p>Can we schedule a meeting to discuss the project?</p>
+            </div>
+            <span>Yesterday</span>
+        </div>
+
+        <div class="message-item">
+            <div class="message-avatar orange-avatar">MK</div>
+            <div class="message-content">
+                <h4>Michael King</h4>
+                <p>Your project files have been received successfully.</p>
+            </div>
+            <span>2 days ago</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SETTINGS SECTION -->
+<section class="page-section" id="settings">
+    <div class="page-heading">
+        <span>PERSONALIZATION</span>
+        <h2>Account Settings</h2>
+        <p>Manage your personal information.</p>
+    </div>
+
+    <div class="content-card settings-card">
+        <div class="settings-profile">
+            <div class="settings-avatar">MA</div>
+            <div>
+                <h3>Michael Asimeng</h3>
+                <p>Administrator</p>
+            </div>
+        </div>
+
+        <form id="settingsForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName"
+                    value="Michael Asimeng" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                    value="michael@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Account Role</label>
+                <input type="text" id="role"
+                    value="Administrator" disabled>
+            </div>
+
+            <button type="submit" class="save-btn">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Save Changes
+            </button>
+        </form>
+
+        <p id="settingsMessage" class="settings-message"
+            aria-live="polite"></p>
+    </div>
+</section>
+
+        </section>
+
+        <footer class="dashboard-footer">
+            © 2026 Masi Solution. All rights reserved.
+        </footer>
+    </main>
+ </div>
+<script src="script.js"></script>
+</body>
+</html>
